@@ -1,3 +1,4 @@
+# i stole this from somewhere sorry
 cmake_minimum_required(VERSION 2.8)
 project(arrays)
 set(CMAKE_BUILD_TYPE Release)

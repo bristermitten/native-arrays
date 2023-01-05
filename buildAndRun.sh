@@ -1,7 +1,7 @@
 rm -rf build
 mkdir build
 cd build || exit
-cmake ../
+cmake ../native
 make
 cd ../
 

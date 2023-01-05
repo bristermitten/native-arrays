@@ -1,2 +1,5 @@
-javac -h . -Xlint:unchecked Array.java Main.java UnsafeMemory.java
-java -Djava.library.path=build Main
+mkdir -p out
+cd java || exit
+javac -h ../native -d ../out Array.java Main.java UnsafeMemory.java
+cd ../
+java -Djava.library.path=build -cp out Main

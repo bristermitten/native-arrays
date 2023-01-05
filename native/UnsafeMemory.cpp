@@ -11,7 +11,7 @@ jfieldID getAddressField(JNIEnv *env, jobject o) {
 }
 
 
-JNIEXPORT jlong JNICALL Java_UnsafeMemory_allocate(JNIEnv *env, jclass, jlong len) {
+JNIEXPORT jlong JNICALL Java_UnsafeMemory_allocate(JNIEnv *, jclass, jlong len) {
     auto arr = new jobject[len];
     return (jlong) arr;
 }
